@@ -1,12 +1,69 @@
-p{
-    margin: 40px;
-    padding: 20px;
+@font-face {
+    font-family: 'Milky Nice';
+    src: url(./fonts/MilkyNice.ttf), url(./fonts/MilkyNice.otf);
 }
 
-.paragrafo_padrao{
-    background-color: #f5f5f5;
+header h1{
+    font-family: 'Milky Nice', sans-serif;
 }
 
-.paragrafo_destacado{
-    background-color: #f0cce2;
+body{
+    background-color: #E1E2E1;
+}
+
+.cabecalho{
+    padding: 10px 5px;
+    background: #69F0AE;
+}
+
+.cabecalho .logo{
+    display: inline-block;
+}
+
+.cabecalho nav{
+    float: right;
+}
+
+.cabecalho nav li{
+    display: inline-block;
+    padding: 12px;
+}
+
+main{
+    background-color: #FFFFFF;
+    padding: 30px;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main h1{
+    text-align: center;
+}
+
+main .info{
+    font-size: 18px;
+}
+
+main p{
+    font-size: 16px;
+}
+
+.image img{
+    width: 100%;
+}
+
+/* media querie para disositivos menores que 576px */
+@media (max-width: 576px){
+    .cabecalho{
+        text-align: center;
+    }
+
+    .cabecalho nav{
+        float: none;
+    }
+
+    .cabecalho nav li{
+        display: block;
+    }
 }

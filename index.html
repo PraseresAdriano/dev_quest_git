@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Git</title>
+    <title>Responsividade e media queries</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
-<body>
-    <h1>Teste Git</h1>
 
-    <p class="paragrafo_padrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, amet ex. Ad cupiditate excepturi quos at ab beatae perferendis repudiandae doloremque pariatur, a deleniti ipsa totam laudantium quod neque vitae.</p>
-    <p class="paragrafo_destacado">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, adipisci ratione. Alias nisi pariatur totam laboriosam vel? Quisquam, cupiditate eaque impedit eos maiores reprehenderit tempora doloremque, quo fuga quas vitae?</p>
-    <p class="paragrafo_padrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error aliquam natus. Iure esse itaque perferendis est eius! Debitis quos fuga ullam et fugiat minima dignissimos maxime laborum dicta pariatur!</p>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#onde-estamos">Onde estamos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="painel">
+            <div class="info">
+                <h1>Batman O cavaleiro das trevas ressurge</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, officiis et! Sint officiis
+                    necessitatibus quibusdam, corporis ratione ea. Voluptatem aliquam, aliquid inventore omnis deleniti
+                    debitis quam molestias nostrum quidem amet.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloremque obcaecati accusantium
+                    nemo tempore sequi harum hic blanditiis, aspernatur eligendi id, vitae numquam alias cupiditate
+                    amet! Exercitationem distinctio libero aut?
+                </p>
+            </div>
+
+            <div class="image">
+                <picture>
+                    <source srcset="./src/images/batman-pequena.jpg" media="(max-width: 600px)">
+
+                    <img src="./src/images/batman.jpg" alt="Imagem do filme Batman o cavaleiro das trevas ressurge" title="Batman o cavaleiro das trevas ressurge">
+                </picture>
+            </div>
+        </section>
+    </main>
 
 </body>
+
 </html>
